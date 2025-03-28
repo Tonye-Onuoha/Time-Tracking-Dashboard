@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet" />
+    <!-- custom CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
@@ -12,6 +19,10 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
         font-size: 11px;
         text-align: center;
       }
@@ -22,31 +33,31 @@
   </head>
   <body>
     <main>
-      <div class="dashboard-container">
+      <div class="dashboard-container rubik-font">
         <div class="profile-container">
           <div class="profile">
             <div class="image-container">
-              <img src="#" alt="profile-picture" />
+              <img src="images/image-jeremy.png" alt="profile-picture" />
             </div>
             <div class="profile-name">
               <p>Report for</p>
-              <h1>Jeremy Robson</h1>
+              <h2>Jeremy Robson</h2>
             </div>
           </div>
           <div class="interval">
-            <p>Daily</p>
-            <p>Weekly</p>
-            <p>Monthly</p>
+            <p class="interval-period">Daily</p>
+            <p class="interval-period">Weekly</p>
+            <p class="interval-period">Monthly</p>
           </div>
         </div>
         <div class="activity-container work">
           <div class="activity">
             <div class="activity-title">
               <p>Work</p>
-              <img src="#" />
+              <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <p>32hrs</p>
+              <h1>32hrs</h1>
               <p>Last Week - 36hrs</p>
             </div>
           </div>
@@ -55,10 +66,10 @@
           <div class="activity">
             <div class="activity-title">
               <p>Play</p>
-              <img src="#" />
+              <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <p>10hrs</p>
+              <h1>10hrs</h1>
               <p>Last Week - 8hrs</p>
             </div>
           </div>
@@ -67,10 +78,10 @@
           <div class="activity">
             <div class="activity-title">
               <p>Study</p>
-              <img src="#" />
+              <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <p>4hrs</p>
+              <h1>4hrs</h1>
               <p>Last Week - 7hrs</p>
             </div>
           </div>
@@ -79,10 +90,10 @@
           <div class="activity">
             <div class="activity-title">
               <p>Exercise</p>
-              <img src="#" />
+              <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <p>4hrs</p>
+              <h1>4hrs</h1>
               <p>Last Week - 5hrs</p>
             </div>
           </div>
@@ -91,10 +102,10 @@
           <div class="activity">
             <div class="activity-title">
               <p>Social</p>
-              <img src="#" />
+              <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <p>5hrs</p>
+              <h1>5hrs</h1>
               <p>Last Week - 10hrs</p>
             </div>
           </div>
@@ -103,10 +114,10 @@
           <div class="activity">
             <div class="activity-title">
               <p>Self Care</p>
-              <img src="#" />
+              <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <p>2hrs</p>
+              <h1>2hrs</h1>
               <p>Last Week - 2hrs</p>
             </div>
           </div>

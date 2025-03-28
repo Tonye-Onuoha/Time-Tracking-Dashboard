@@ -1,0 +1,174 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    color: hsl(235, 45%, 61%);
+    background-color: hsl(226, 43%, 10%);
+}
+
+main {
+    width: 100%;
+}
+
+.rubik-font {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    font-weight: 100;
+}
+
+.dashboard-container {
+    max-width: 90%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-row-gap: 20px;
+}
+
+.profile-container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    padding: 6%;
+    box-sizing: border-box;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container > img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.profile-name {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile-name > p {
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+}
+
+.profile-name > h2 {
+    color: #ffffff;
+}
+
+.interval {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.interval-period {
+    width: 33.33%;
+    text-align: center;
+}
+
+.interval-period:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.activity-container {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.activity {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url("../images/icon-work.svg");
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url("../images/icon-play.svg");
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url("../images/icon-study.svg");
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url("../images/icon-exercise.svg");
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url("../images/icon-social.svg");
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url("../images/icon-self-care.svg");
+}
+
+.activity-title,
+.activity-duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-title > p,
+.activity-duration > p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.activity-duration > h1 {
+    color: #ffffff;
+}
+
+.ellipsis {
+    height: 5px;
+}
