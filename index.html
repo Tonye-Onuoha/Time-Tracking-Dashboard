@@ -45,9 +45,9 @@
             </div>
           </div>
           <div class="interval">
-            <p class="interval-period">Daily</p>
-            <p class="interval-period">Weekly</p>
-            <p class="interval-period">Monthly</p>
+            <p id="daily" class="interval-period">Daily</p>
+            <p id="weekly" class="interval-period">Weekly</p>
+            <p id="monthly" class="interval-period">Monthly</p>
           </div>
         </div>
         <div class="activity-container work">
@@ -57,8 +57,8 @@
               <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <h1>32hrs</h1>
-              <p>Last Week - 36hrs</p>
+              <h1 data-activity="Work" class="current-period">32hrs</h1>
+              <p data-activity="Work" class="previous-period">Last Week - 36hrs</p>
             </div>
           </div>
         </div>
@@ -69,8 +69,8 @@
               <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <h1>10hrs</h1>
-              <p>Last Week - 8hrs</p>
+              <h1 data-activity="Play" class="current-period">10hrs</h1>
+              <p data-activity="Play" class="previous-period">Last Week - 8hrs</p>
             </div>
           </div>
         </div>
@@ -81,8 +81,8 @@
               <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <h1>4hrs</h1>
-              <p>Last Week - 7hrs</p>
+              <h1 data-activity="Study" class="current-period">4hrs</h1>
+              <p data-activity="Study" class="previous-period">Last Week - 7hrs</p>
             </div>
           </div>
         </div>
@@ -93,8 +93,8 @@
               <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <h1>4hrs</h1>
-              <p>Last Week - 5hrs</p>
+              <h1 data-activity="Exercise" class="current-period">4hrs</h1>
+              <p data-activity="Exercise" class="previous-period">Last Week - 5hrs</p>
             </div>
           </div>
         </div>
@@ -105,8 +105,8 @@
               <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <h1>5hrs</h1>
-              <p>Last Week - 10hrs</p>
+              <h1 data-activity="Social" class="current-period">5hrs</h1>
+              <p data-activity="Social" class="previous-period">Last Week - 10hrs</p>
             </div>
           </div>
         </div>
@@ -117,8 +117,8 @@
               <img class="ellipsis" src="images/icon-ellipsis.svg" />
             </div>
             <div class="activity-duration">
-              <h1>2hrs</h1>
-              <p>Last Week - 2hrs</p>
+              <h1 data-activity="Self Care" class="current-period">2hrs</h1>
+              <p data-activity="Self Care" class="previous-period">Last Week - 2hrs</p>
             </div>
           </div>
         </div>
@@ -130,5 +130,6 @@
       >. Coded by <a href="https://github.com/Tonye-Onuoha"><b>Tonye Hugo Onuoha</b></a
       >.
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
