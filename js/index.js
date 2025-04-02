@@ -33,6 +33,14 @@ function screenUpdate(interval, description) {
     });
 }
 
+const handleEllipsisIconMouseOver = (e) => {
+    e.currentTarget.src = "../images/icon-ellipsis-hover.svg";
+};
+
+const handleEllipsisIconMouseOut = (e) => {
+    e.currentTarget.src = "../images/icon-ellipsis.svg";
+};
+
 // Initialize the default screen setting.
 fetchDashboardData()
     .then((data) => {
@@ -86,6 +94,6 @@ monthlyButton.addEventListener("click", () => {
 });
 
 ellipsisIconsArray.forEach((ellipsisIcon) => {
-    ellipsisIcon.addEventListener("mouseover", (e) => (e.currentTarget.src = "../images/icon-ellipsis-hover.svg"));
-    ellipsisIcon.addEventListener("mouseout", (e) => (e.currentTarget.src = "../images/icon-ellipsis.svg"));
+    ellipsisIcon.addEventListener("mouseover", handleEllipsisIconMouseOver);
+    ellipsisIcon.addEventListener("mouseout", handleEllipsisIconMouseOut);
 });
