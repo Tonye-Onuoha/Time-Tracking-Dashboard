@@ -8,12 +8,14 @@ let currentPeriodsArray;
 let previousPeriodsArray;
 
 async function fetchDashboardData() {
-    const response = await fetch("http://localhost:50460/data.json/");
+    // This function retrieves the data from the "data.json" file located in the root directory of the project.
+    const response = await fetch("https://time-tracking-dashboard-eight-ebon.vercel.app/data.json/");
     const data = response.json();
     return data;
 }
 
 function screenUpdate(interval, description) {
+    // This function updates the screen with the data from the "data.json" file.
     currentPeriodsArray.forEach((currentPeriod) => {
         const title = currentPeriod.dataset.activity;
         const periodData = periodsMap.get(title);
@@ -31,7 +33,7 @@ function screenUpdate(interval, description) {
     });
 }
 
-// default screen setting.
+// Initialize the default screen setting.
 fetchDashboardData()
     .then((data) => {
         data.map((activity) => {
@@ -48,7 +50,7 @@ fetchDashboardData()
         dailyButton.onmouseover = dailyButton.style.cursor = "default";
     });
 
-/* event listeners */
+/* Event listeners */
 
 dailyButton.addEventListener("click", () => {
     if (!periodsMap.size || dailyButton.style.cursor === "default") return;
