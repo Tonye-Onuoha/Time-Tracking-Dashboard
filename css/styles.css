@@ -22,7 +22,6 @@ main {
 }
 
 h1,
-h2,
 p {
     margin: 0;
     font-weight: 100;
@@ -188,14 +187,19 @@ p {
 .activity-duration > h1 {
     font-size: 40px;
     color: #ffffff;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .activity-duration > p {
     color: hsl(236, 100%, 87%);
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .ellipsis {
     height: 5px;
+    padding: 10px;
 }
 
 /* MEDIA QUERIES */
